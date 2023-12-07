@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // splice examples in notes
+
+        // max value in a array  o/p:5
+
+        var a=[1,2,3,4,5]
+var b=0
+for(i=0;i<a.length;i++){
+if(b<a[i]){
+   b=a[i] 
+}
+}
+console.log(b)
+ 
+// in array particular position value
+
+let a=["hello","ooook"]
+let b=[]
+for(i=0;i<a.length;i++){
+    b.push(a[i].slice(1,3))
+     }
+    console.log(b)
+
+    // o/p;["el","oo"]
+
+    // only even place letter
+
+    var a=["sowmya","Harish"];
+var b=[];
+var c=""
+for(i=0;i<a.length;i++){
+    c=""
+    for(j=0;j<a[i].length;j++){
+
+    if(j%2==0){
+c=c+a[i][j];
+    }
+}
+b.push(c)
+}
+console.log(b)
+ 
+// o/p;[ 'swy', 'Hrs' ]
+
+// only odd place letter in array
+
+var a=["sowmya","Harish"];
+var b=[];
+var c=""
+for(i=0;i<a.length;i++){
+    c=""
+    for(j=0;j<a[i].length;j++){
+
+    if(j%2!=0){
+c=c+a[i][j];
+    }
+}
+b.push(c)
+}
+console.log(b)
+//  o/p:[ 'oma', 'aih' ]
+
+var a=[1,2,3,4]
+var sum=0;
+var b=[]
+for(i=0;i<a.length;i++){
+    sum=10-a[i]
+b.push(sum)
+    }
+ console.log(b)
+
+//  o/p:[ 9, 8, 7, 6 ]
+
+// same as above question but in map method
+
+var a=[1,2,3,4]
+let s=a.map(hello)
+function hello(value,index,array){
+     return 10-value
+    
+}
+ console.log(s)
+
+// reverse of string
+var a="even"
+var b=""
+  for(i=a.length-1;i>=0;i--){
+ b=b+a[i]
+   
+ }
+ console.log(b) 
+
+//  even place string should return
+var a=["odd","cat","dog","camel"]
+var c=[]
+for(i=0;i<a.length;i++){
+    if(i%2!=0){
+        var temp=""
+        for(j=a[i].length-1;j>=0;j--){
+           temp=temp+a[i][j]
+        }
+       c.push(temp)
+    }
+    else{
+        c.push(a[i])
+    }
+  }
+  console.log(c)
+//   o/p:[ 'odd', 'tac', 'dog', 'lemac' ]
+
+// o/p should ["ab","cb"]
+
+var a=["a1","a213","ab","a123b","cb123","cb"]
+var c=[]
+for(i=0;i<a.length;i++){
+    if(a[i]=="ab"||a[i]=="cb"){
+    c.push(a[i]) 
+     }
+}
+ console.log(c)
+
+
+    </script>
+</body>
+</html>
